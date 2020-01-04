@@ -13,23 +13,25 @@
 *.ilk
 *.map
 *.exp
-
+.idea
 # Precompiled Headers
 *.gch
 *.pch
+.idea
 
 # Libraries
 *.lib
 *.a
 *.la
 *.lo
+.idea
 
 # Shared objects (inc. Windows DLLs)
 *.dll
 *.so
 *.so.*
 *.dylib
-
+.ide
 # Executables
 *.exe
 *.out
@@ -43,6 +45,7 @@
 *.su
 *.idb
 *.pdb
+.idea
 
 # Kernel Module Compile Results
 *.mod*
@@ -52,4 +55,5 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+.idea
 
