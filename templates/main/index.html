@@ -6,7 +6,8 @@
         <h2>Add Item</h2>
         <form action="add_todo/" method="post" class="form-inline">{% csrf_token %}
         <input type="text" name="content" class="form-control mb-2 mr-sm-2" placeholder="Type Here">
-        <button type="submit" class="btn btn-primary mb-2">Submit</button>
+            <input type="text" name="priority" class="form-control mb-2 mr-sm-2" placeholder="Enter Priority">
+            <button type="submit" class="btn btn-primary mb-2">Submit</button>
         </form>
         </div>
     </div>
@@ -16,7 +17,7 @@
             <ul class="list-group">
               <li class="list-group-item active">Your To Do</li>
               {% for todo_item in todo_items %}
-                    <li class="list-group-item">{{ todo_item.text }}
+                    <li class="list-group-item">{{ todo_item.text }} With {{ todo_item.priority }} priority
                         <div class="float-right">
                             <form action="delete_todo/{{ todo_item.id }}/" method="post">{% csrf_token %}
                                 <button type="submit" class="btn btn-danger  mb-1">Delete</button>

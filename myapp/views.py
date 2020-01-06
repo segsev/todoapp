@@ -13,8 +13,9 @@ def add_todo(request):
     response = "I am called"
     current_date = timezone.now()
     content = request.POST["content"]
-    if(content):
-        created_obg = Todo.objects.create(added_date=current_date, text=content)
+    priority = request.POST["priority"]
+    if(content and priority):
+        created_obg = Todo.objects.create(added_date=current_date, text=content, priority=priority)
     return HttpResponseRedirect("/")
 
 def delete_todo(request, todo_id):
