@@ -1,5 +1,4 @@
-pp
-
+#### Django Learning
 This is a sample To Do app developed in python Django for learning purpose. 
 
 Feel free to use, modify and add new features.
